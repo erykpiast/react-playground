@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>React Playground</title>
+        
+        <style type="text/css">
+            .todo-item {
+                list-style-type: none;
+            }
+                .todo-item:before {
+                    border: 1px solid #000;
+                    border-radius: 50%;
+                    content: attr(data-id);
+                    display: inline-block;
+                    height: 1em;
+                    overflow: hidden;
+                    text-align: center;
+                    width: 1em;
+                }
+                .todo-item--done .todo-item__label {
+                    text-decoration: line-through;
+                }
+        </style>
+
+        <script src="demo.bundle.js"></script>
+    </head>
+    <body>
+
+        <!-- <list-item label="{{ label }}" id="{{ id }}" /> -->
+
+    </body>
+</html>
