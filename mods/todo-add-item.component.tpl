@@ -1,7 +1,7 @@
 <div class="todo-add-item">
     <form
         class="todo-add-item__form"
-        on-submit="add(event)"
+        on-submit="add()"
     >
         <input
             class="todo-add-item__form__in"

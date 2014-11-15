@@ -1,5 +1,6 @@
 module.exports = (function() {
-
+    'use strict';
+    
     var fs = require('fs');
     var Ractive = require('ractive');
 
@@ -13,6 +14,10 @@ module.exports = (function() {
           modifyArrays: false,
           isolate: true,
           template: template.toString(),
+          data: {
+              list: [ ],
+              filter: function() { return true; }
+          },
           components: {
               'todo-item': todoItemComponent(actions)
           }

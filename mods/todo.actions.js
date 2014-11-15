@@ -10,8 +10,9 @@ module.exports = (function() {
             'toggleAll',
             'add',
             'remove',
-            'clearCompleted',
-            'edit'
+            'clearDone',
+            'edit',
+            'filter'
         ]);
     }
 

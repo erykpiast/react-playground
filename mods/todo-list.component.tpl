@@ -1,7 +1,9 @@
 <ul class="todo-list">
-    {{#list:i}}
+    {{#list}}
+        {{#if filter(.) }}
     <li class="todo-list__item">
-        <todo-item id="{{ id }}" label="{{ label.toString() }}" done="{{ !!done }}" />
+        <todo-item id="{{ id }}" label="{{ label || '' }}" done="{{ done || false }}" />
     </li>
+        {{/if}}
     {{/list}}
 </ul>

@@ -4,6 +4,8 @@
     </header>
 
     <todo-add-item />
-    <todo-list list="{{ list }}" />
+    <todo-filters filters="{{ filters.list || null }}" />
+    <todo-list list="{{ list || null }}" filter="{{ filters.current || null }}" />
+    <todo-list-actions />
 
 </section>
